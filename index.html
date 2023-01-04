@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Tori Jeffrey">
+        <meta name="description" content="An unusual questionnaire">
+        <title>The Random Questionnaire</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>The Random Questionnaire</h1>
+            <hr>
+        </header>
+
+        <main>
+            <form action="submit" method="GET">
+                <div>
+                    <label for="name">1.What's your first name?</label>
+                    <input type="text" id="name" name="name" placeholder="Eg, John" required>
+                </div>
+                <br>
+                <div>
+                    <label for="age">2.How old are you?</label>
+                    <input type="number" id="age" name="age" min="1" max="150" required>
+                </div>
+                <br>
+                <div>
+                    <label for="color">3.What's your favorite color?</label>
+                    <input type="color" id="color">
+                </div>
+                <br>
+                <div>
+                    <label for="power">4.If you could have any superpower, which one would you want?</label>
+                    <input type="text" id="power" name="power" placeholder="Eg, The ability to fly">
+                </div>
+                <br>
+                <div>
+                    <label for="catsdogs">5.Cats or dogs?</label>
+                    Cats<input type="radio" name="catsdogs" value="cats" id="cats">
+                    Dogs<input type="radio" name="catsdogs" value="dogs" id="dogs">
+                </div>
+                <br>
+                <div>
+                    <label for="remove">6. If you could remove one thing from Earth, what would it be?</label>
+                    <input type="text" name="remove" id="remove" placeholder="Eg, mosquitos">
+                </div>
+                <br>
+                <div>
+                    <label for="food">7.You can only eat one food for the rest of your life, what do you choose?</label>
+                    <select id="food" name="food">
+                        <option value="choose">Choose one</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="icecream">Ice-cream</option>
+                        <option value="burgers">Burgers</option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="chips">Chips</option>
+                        <option value="chicken">Chicken</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="apocalypse">8.What 5 things you would want to have during a zombie apocalypse:</label>
+                    <textarea id="apocalypse" name="apocalypse" cols="20" rows="3" placeholder="A weapon..."></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="action">9.What film genres do you enjoy watching?</label>
+                    <input type="checkbox" id="action" name="action" value="action">Action
+                    <input type="checkbox" id="scifi" name="scifi" value="scifi">Sci-Fi
+                    <input type="checkbox" id="comedy" name="comedy" value="comedy">Comedy
+                    <input type="checkbox" id="horror" name="horror" value="horror">Horror
+                    <input type="checkbox" id="fantasy" name="fantasy" value="fantasy">fantasy
+                </div>
+                <br>
+                <div>
+                    <label for="choice">10.Would you rather:</label>
+                    know the cause of your death?<input type="radio" name="choice" value="date" id="date">
+                    or know the date of your death?<input type="radio" name="choice" value="cause" id="cause">
+                </div>
+                <br>
+                <button type="submit">Submit</button>
+                <p>Thank you for taking my questionnaire :)</p>
+            </form>
+        </main>
+    </body>
+</html>
